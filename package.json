@@ -1,0 +1,38 @@
+{
+  "name": "midterm-project",
+  "version": "1.0.0",
+  "description": "Bethel Bootcamp Pet Adoption Midterm",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/app.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon build/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fordp86/petadoption-midterm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fordp86/petadoption-midterm/issues"
+  },
+  "homepage": "https://github.com/fordp86/petadoption-midterm#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.0.0",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18",
+    "typescript": "^4.7.4"
+  }
+}
