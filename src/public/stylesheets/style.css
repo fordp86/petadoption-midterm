@@ -5,11 +5,11 @@ body {
   }
   
   a {
-    color: #00b7ff;
+    color: #004369;
   }
 
   .navbar-brand{
-    color:blueviolet !important;
+    color:#01949A !important;
     font-family: 'Amatic SC', cursive;
     font-size: 4em;
   }
