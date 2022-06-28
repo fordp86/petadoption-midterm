@@ -18,7 +18,7 @@ export const onePet: RequestHandler = async (req, res, next) => {
         res.render('pet-detail', { foundPet: petItem});
     }
     else{
-        res.status(404).render('error', { message: 'coffee not found'});
+        res.status(404).render('error', { message: 'Pet not found'});
     }
 }
 
@@ -42,7 +42,7 @@ export const editPetPage: RequestHandler = async (req, res, next) => {
         res.render('edit-pet', { foundPet: petItem});
     }
     else{
-        res.status(404). render('error', { message: 'coffee not found' });
+        res.status(404). render('error', { message: 'Pet not found' });
     }
 
 }
@@ -59,7 +59,7 @@ export const editPet: RequestHandler = async (req, res, next) => {
         res.redirect('/pets');
     }
     else {
-        res.render('error', { message: 'Coffee could not be updated' });
+        res.render('error', { message: 'Pet could not be updated' });
     }
 }
 

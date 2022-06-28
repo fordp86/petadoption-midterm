@@ -1,9 +1,29 @@
 body {
     padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color: beige;
   }
   
   a {
     color: #00b7ff;
+  }
+
+  .navbar-brand{
+    color:blueviolet !important;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+  }
+
+  .content .card > img{
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  .details{
+    max-width: 650px;
+  }
+
+  .details .card > img{
+    max-height: 450px;
+    overflow: hidden;
   }

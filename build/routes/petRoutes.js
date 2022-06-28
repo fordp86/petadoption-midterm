@@ -16,5 +16,5 @@ router.post('/edit/:petId', petController_1.editPet);
 // POST /coffee/delete/:coffeeId - delete coffee item
 router.post('/delete/:petId', petController_1.deletePet);
 // GET /coffee/:coffeeId - render the coffee item requested
-router.get('/:coffeeId', petController_1.onePet);
+router.get('/:petId', petController_1.onePet);
 exports.default = router;

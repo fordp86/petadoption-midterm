@@ -1,13 +1,26 @@
-<h1>Add a New Pet</h1>
-<form action='/pets/add' method="POST">
-    <label for="name">Enter Pet Name: </label>
-    <input type="text" name="name" placeholder="Enter Name" /><br>
+<div class="row">
+    <div class="col col-md-12">
+        <h1>Add a New Pet</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-md-12">
+        <form action='/pets/add' method="POST">
+            <label class="form-label" for="petName">Enter Pet Name: </label>
+            <input class="form-control" type="text" name="petName" placeholder="Enter Name" /><br>
 
-    <label for="description">Enter Pet Description: </label>
-    <input type="text" name="description" placeholder="Enter Description" /><br>
+            <label class="form-label" for="petImage">Pet Image: </label>
+            <input class="form-control" type="text" name="petImage" placeholder="Enter Url" /><br>
 
-    <label for="price">Enter Item Price: </label>
-    <input type="text" name="price" placeholder="Enter Price" /><br>
+            <label class="form-label" for="description">Enter Pet Description: </label>
+            <input class="form-control" type="text" name="description" placeholder="Enter Description" /><br>
 
-    <button type="submit">Add Pet</button>
-</form>
+            <button type="submit" class="btn btn-primary">Add Pet</button>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-md-12">
+        <a href="/pets" class="btn btn-primary">Go Back</a>
+    </div>
+</div>

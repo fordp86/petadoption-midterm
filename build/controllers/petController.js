@@ -27,7 +27,7 @@ const onePet = (req, res, next) => __awaiter(void 0, void 0, void 0, function* (
         res.render('pet-detail', { foundPet: petItem });
     }
     else {
-        res.status(404).render('error', { message: 'coffee not found' });
+        res.status(404).render('error', { message: 'Pet not found' });
     }
 });
 exports.onePet = onePet;
@@ -50,7 +50,7 @@ const editPetPage = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
         res.render('edit-pet', { foundPet: petItem });
     }
     else {
-        res.status(404).render('error', { message: 'coffee not found' });
+        res.status(404).render('error', { message: 'Pet not found' });
     }
 });
 exports.editPetPage = editPetPage;
@@ -64,7 +64,7 @@ const editPet = (req, res, next) => __awaiter(void 0, void 0, void 0, function* 
         res.redirect('/pets');
     }
     else {
-        res.render('error', { message: 'Coffee could not be updated' });
+        res.render('error', { message: 'Pet could not be updated' });
     }
 });
 exports.editPet = editPet;

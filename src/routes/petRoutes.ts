@@ -23,6 +23,6 @@ router.post('/edit/:petId', editPet);
 router.post('/delete/:petId', deletePet);
 
 // GET /coffee/:coffeeId - render the coffee item requested
-router.get('/:coffeeId', onePet);
+router.get('/:petId', onePet);
 
 export default router;
