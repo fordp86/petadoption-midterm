@@ -16,14 +16,22 @@
                 <div class="card">
                     <img src="{{petImage}}" class="card-img-top" alt="{{petName}}">
                     <div class="card-body">
-                        <h2 class="card-title">{{petName}}</h2>
+                        <h2 class="card-title text-center">{{petName}}</h2>
                     </div>
                     <div class="actions p-3">
-                        <a class="btn btn-primary" href="/pets/{{petId}}">View Details</a>
-                        <a class="btn btn-warning" href="/pets/edit/{{petId}}">Edit Details</a>
-                        <form class="mt-3" action="/pets/delete/{{petId}}" method="POST">
-                            <button type="submit" class="btn btn-danger">Delete Pet</button>
-                        </form>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item">
+                                <a class="btn btn-primary" href="/pets/{{petId}}">View Details</a>
+                            </li>
+                            <li class="list-group-item">
+                                 <a class="btn btn-warning" href="/pets/edit/{{petId}}">Edit Details</a>
+                            </li>
+                            <li class="list-group-item">
+                                <form action="/pets/delete/{{petId}}" method="POST">
+                                    <button type="submit" class="btn btn-danger">Delete Pet</button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

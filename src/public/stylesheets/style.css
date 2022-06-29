@@ -2,11 +2,22 @@ body {
     padding: 50px;
     font: 16px 'Shadows Into Light', cursive;
     background-color: beige;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
   }
   
   a {
     color: #004369;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+  }
+
+  ul{
+    list-style: none;
+    border: none;
+  }
+
+  .list-group-item{
+    border: none;
   }
 
   .navbar-brand{
@@ -27,4 +38,13 @@ body {
   .details .card > img{
     max-height: 450px;
     overflow: hidden;
+  }
+
+  .card-text{
+    font-size: 1.5em;
+  }
+
+  .form-control, button, .btn{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
   }

@@ -5,22 +5,28 @@
 </div>
 <div class="row">
     <div class="col col-md-12">
-        <form action='/pets/add' method="POST">
-            <label class="form-label" for="petName">Enter Pet Name: </label>
-            <input class="form-control" type="text" name="petName" placeholder="Enter Name" /><br>
+        <div class="add">
+            <form action='/pets/add' method="POST">
+                <label class="form-label" for="petName">Enter Pet Name: </label>
+                <input class="form-control" type="text" name="petName" placeholder="Enter Name" /><br>
 
-            <label class="form-label" for="petImage">Pet Image: </label>
-            <input class="form-control" type="text" name="petImage" placeholder="Enter Url" /><br>
+                <label class="form-label" for="petImage">Pet Image: </label>
+                <input class="form-control" type="text" name="petImage" placeholder="Enter Url" /><br>
 
-            <label class="form-label" for="description">Enter Pet Description: </label>
-            <input class="form-control" type="text" name="description" placeholder="Enter Description" /><br>
+                <label class="form-label" for="description">Enter Pet Description: </label>
+                <input class="form-control" type="text" name="description" placeholder="Enter Description" /><br>
 
-            <button type="submit" class="btn btn-primary">Add Pet</button>
-        </form>
-    </div>
-</div>
-<div class="row">
-    <div class="col col-md-12">
-        <a href="/pets" class="btn btn-primary">Go Back</a>
+                <button type="submit" class="btn btn-primary">Add Pet</button>
+            </form>
+
+             <div class="actions d-flex justify-content-end">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">
+                        <a href="/pets" class="btn btn-secondary">Go Back</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </div>
